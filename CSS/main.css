@@ -1,4 +1,22 @@
 @import url('./base.css');
+
+/* body{
+    height: fit-content;
+} */
+
+header{
+    background-color :#FFFFFF;
+    height: 100px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    top:0;
+    z-index: 1000; 
+}
+
 .nav ul{
     display: flex;
     gap:16px;
@@ -73,24 +91,152 @@
     color:#ffffff;
 }
 
+/* ................................................................ */
 
-header{
-    background-color :#FFFFFF;
-    height: 100px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-
+.courses{
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
 
-    /* 
-    position: fixed;
-    top:0;
-    z-index: 1000px; */
+.course-items{
+    width: calc((100% -40px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
+
+.course{
+    width: calc((100% -20px)/2);
+    position: relative;
+    color: #FFFFFF;
+}
+
+.course img{
+    filter: brightness();
 }
 
 
-.body{
-    height: 600px;
+.WhatWeGive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: F5F5F5;
+    height:400px;
+}
+.whatGive{
+    width:400px;
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+}
+
+.whatGive:first-child{
+    color:#545BE8;
+}
+
+.whatGive p{
+    color: gray;
+}
+
+.certificate{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.CertificateItem{
+    background-color: #545BE8;
+    color:#FFFFFF;
+    padding: 20px 40px 40px 20px;
+    margin:20px;
+    border-radius:20px;
+    height:140px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.CertificateItem img{
+    height:40px;
+    width: 40px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+}
+
+
+
+.FindYourCourse{
+    padding: 100px 100px;
+    color:grey;
+    width:320px;
+    font-size: 26px;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    padding-left: 100px;
+    
+}
+
+.FindYourCourse h2{
+    color:black;
+    line-height: 56px;
+}
+
+.FindYourCourse span{
+    color:#545BE8;
+}
+
+.FindYourCourse span:first-child{
+    color:#545BE8;
+    /* display: block; */
+}
+
+.ButtonsRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ButtonsRow button:first-child{
+    color:#ffffff;
+    background-color: #545BE8;
+}
+
+.ButtonsRow button{
+    height: 20px;
+    width: fit-content;
+    padding:20px 20px 20px 20px;
+    border-radius: 15px;   
+    display: flex;
+    gap:20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.FindYourCourseIMG img{
+    height:500px;
+    width: 500px;
+    padding-right: 100px;
+}
+
+
+/* ................................................................ */
+footer {
+    background-color: #393E46;
+    padding: 50px 100px 50px 100px; 
+    color:#FFFFFF;
+    display: flex;
+    gap:100px;
+    box-sizing: border-box;
+}
+
+footer a{
+    color:#FFFFFF
 }
 
 footer .start{
@@ -98,12 +244,6 @@ footer .start{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-footer {
-    background-color: #393E46;
-     padding: 50px 100px 50px 100px; 
-    box-sizing: border-box;
 }
 
 footer .row i{
@@ -115,14 +255,6 @@ footer .row i{
 footer a{
     color:#FFFFFF;
 }
-
-footer {
-    color:#FFFFFF;
-    display: flex;
-    gap:100px;
-    box-sizing: border-box;
-}
-
 
 footer .end{
     display: flex;
@@ -139,18 +271,17 @@ footer .end .end_list{
     flex-direction: column;
 }
 
-footer a{
-    color:#FFFFFF
-}
 
-@media screen and (max-width:545px) {
+
+
+@media screen and (max-width:400px) {
     .nav{
         display: none;
     }
 
 
     footer .row{
-        flex-wrap: nowrap;
+        flex-direction: column;
         gap: 20px;
      }
 
@@ -181,13 +312,82 @@ footer a{
        flex-direction: column;
     }
 
+    .WhatWeGive{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        height: calc(100%);
+    }
+
+    .certificate{ 
+        flex-direction: column;
+    }
+
+    /* .certificate .whatGive{ 
+        width: 150px;
+    } */
+
+
+}
+
+
+@media screen and (max-width:545px) {
+    .nav{
+        display: none;
+    }
+
+
+    footer .row{
+        flex-direction: column;
+        gap: 20px;
+     }
+
+     .authentication ul .login{
+        width:20px;
+        font-size: 10px;
+    }
+
+    .authentication ul .reg{
+        width:20px;
+        font-size: 10px;
+    }
+
+    footer {
+        background-color: #393E46;
+        padding: 5px 5px 5px 5px; 
+        box-sizing: border-box;
+    }
+    
+    footer .start{
+        width:300px;
+        display: flex;
+        gap:20px;
+        padding: 0px 0px;
+    }
+
+    footer .end{
+       flex-direction: column;
+    }
+
+    .WhatWeGive{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        height: calc(100%);
+    }
+
+    .certificate{ 
+        flex-direction: column;
+    }
+
+
 }
 
 
 @media screen and (max-width:800px){
     
     .nav{
-        display: none;
+        display: none; 
     }
 
 
@@ -199,7 +399,7 @@ footer a{
 
     footer{
         flex-direction: column;
-        padding:20px 10px 5px 10px;        
+        padding:20px 10px 5px 10px;      
      }
     
     footer .start{
@@ -216,6 +416,14 @@ footer a{
         align-items: center;
     }
 
+    .WhatWeGive{
+        height: calc(100%);
+    }
+
+    .certificate{ 
+        flex-direction: column;
+    }
+   
 
 
 }
