@@ -273,7 +273,7 @@ footer .end .end_list{
 
 
 
-
+/* 
 @media screen and (max-width:400px) {
     .nav{
         display: none;
@@ -325,10 +325,11 @@ footer .end .end_list{
 
     /* .certificate .whatGive{ 
         width: 150px;
-    } */
+    } 
 
 
-}
+} 
+*/
 
 
 @media screen and (max-width:545px) {
@@ -380,6 +381,14 @@ footer .end .end_list{
         flex-direction: column;
     }
 
+    .FindYourCourseIMG img{
+        height:200px;
+        width: 200px;
+    }
+
+    .FindYourCourse{
+        padding-left: 0px;
+    }
 
 }
 
@@ -423,7 +432,14 @@ footer .end .end_list{
     .certificate{ 
         flex-direction: column;
     }
-   
 
+    .FindYourCourseIMG img{
+        height:200px;
+        width: 200px;
+    }
+   
+    .FindYourCourse{
+        padding-left: 0px;
+    }
 
 }
