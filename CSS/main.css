@@ -57,13 +57,6 @@ header{
     height:40px;
 }
 
-
-/* .authentication {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .authentication ul{
     display: flex;
     justify-content: center;
@@ -104,7 +97,7 @@ header{
     color:#ffffff;
 }
 
-/* ................................................................ */
+/* ..............................   Courses Section   .................................. */
 
 .courses{
     display: flex;
@@ -129,6 +122,9 @@ header{
 .course img{
     filter: brightness();
 }
+
+
+/* .............................    Offers section    ................................... */
 
 
 .WhatWeGive{
@@ -181,17 +177,21 @@ header{
 }
 
 
+/*...........................      FIND YOUR COURSE SECTION     ...................................*/
+
 
 .FindYourCourse{
     padding: 100px 100px;
     color:grey;
-    width:320px;
-    font-size: 26px;
+    font-size: 26px;  
+}
+
+.FindYourCourse .row{
     display: flex;
-    gap:20px;
-    flex-direction: column;
-    padding-left: 100px;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap:50px;
 }
 
 .FindYourCourse h2{
@@ -210,9 +210,9 @@ header{
 
 .ButtonsRow{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
-    justify-content: space-between;
+    gap:40px;
 }
 
 .ButtonsRow button:first-child{
@@ -236,11 +236,11 @@ header{
 .FindYourCourseIMG img{
     height:500px;
     width: 500px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
 }
 
 
-
+/*.............................................    Statistics Section    ................................................*/
 
 .statistics{
     padding:0px 100px;
@@ -285,7 +285,7 @@ header{
 }
 
 
-/* ................................................................ */
+/* .............................    Footer Section    ................................... */
 footer {
     background-color: #393E46;
     padding: 50px 100px 50px 100px; 
@@ -333,63 +333,7 @@ footer .end .end_list{
 
 
 
-/* 
-@media screen and (max-width:400px) {
-    .nav{
-        display: none;
-    }
-
-
-    footer .row{
-        flex-direction: column;
-        gap: 20px;
-     }
-
-     .authentication ul .login{
-        width:20px;
-        font-size: 10px;
-    }
-
-    .authentication ul .reg{
-        width:20px;
-        font-size: 10px;
-    }
-
-    footer {
-        background-color: #393E46;
-        padding: 5px 5px 5px 5px; 
-        box-sizing: border-box;
-    }
-    
-    footer .start{
-        width:300px;
-        display: flex;
-        gap:20px;
-        padding: 0px 0px;
-    }
-
-    footer .end{
-       flex-direction: column;
-    }
-
-    .WhatWeGive{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        flex-direction: column;
-        height: calc(100%);
-    }
-
-    .certificate{ 
-        flex-direction: column;
-    }
-
-    /* .certificate .whatGive{ 
-        width: 150px;
-    } 
-
-
-} 
-*/
+/*..................................    Media Section    ............................................*/
 
 
 @media screen and (max-width:545px) {
@@ -468,6 +412,13 @@ footer .end .end_list{
     .statistics{
         padding:0px;
         text-align: center;
+        
+    }
+
+    .statistics .row{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
     }
 
     .statistics img{
@@ -545,6 +496,11 @@ footer .end .end_list{
    
     .FindYourCourse{
         padding: 0px;
+        text-align: center;
+    }
+
+    .FindYourCourse .row{
+        flex-direction: column;
     }
 
     .statistics{
