@@ -439,7 +439,6 @@ footer .end .end_list{
         flex-direction: column;
         height: calc(100%);
         width:300px;
-        text-align: center;
     }
 
     .certificate{ 
@@ -524,7 +523,6 @@ footer .end .end_list{
     .WhatWeGive{
         height: calc(100%);
         width:300px;
-        text-align: center;
     }
 
     .certificate{ 
