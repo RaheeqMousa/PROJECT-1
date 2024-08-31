@@ -5,6 +5,7 @@
 } */
 
 header{
+    
     background-color :#FFFFFF;
     height: 100px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
@@ -19,6 +20,7 @@ header{
  }
 
 .nav{
+    height:fit-content;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -430,6 +432,7 @@ footer .end .end_list{
     }
 
     footer .end{
+       padding:0px;
        flex-direction: column;
     }
 
@@ -438,7 +441,11 @@ footer .end .end_list{
         margin-bottom: 40px;
         flex-direction: column;
         height: calc(100%);
-        width:300px;
+        text-align: center;
+    }
+
+    .whatGive{
+        width:100%;
     }
 
     .certificate{ 
@@ -522,7 +529,8 @@ footer .end .end_list{
 
     .WhatWeGive{
         height: calc(100%);
-        width:300px;
+        width:calc(100%);
+        text-align: center;
     }
 
     .certificate{ 
@@ -563,6 +571,18 @@ footer .end .end_list{
     .statistics .statNumbers p:nth-child(3){
         color:#ffffff;
         width:200px;
+    }
+
+}
+
+@media screen and (min-width:800px){
+    
+    footer .row{
+        gap:30px;   
+     }
+
+    footer .end{
+        padding:0px 0px;
     }
 
 }
