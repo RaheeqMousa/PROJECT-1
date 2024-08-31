@@ -13,8 +13,19 @@ header{
     align-items: center;
 
     position: sticky;
+
     top:0;
     z-index: 1000; 
+ }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav i{
+    margin-left: auto;
 }
 
 .nav ul{
@@ -157,6 +168,7 @@ header{
     display: flex;
     flex-direction: column;
     gap:15px;
+    height:fit-content;
 }
 
 .CertificateItem img{
@@ -191,7 +203,7 @@ header{
 
 .FindYourCourse span:first-child{
     color:#545BE8;
-    /* display: block; */
+    display: block;
 }
 
 .ButtonsRow{
@@ -216,12 +228,58 @@ header{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 .FindYourCourseIMG img{
     height:500px;
     width: 500px;
     padding-right: 100px;
+}
+
+
+
+
+.statistics{
+    padding:0px 100px;
+    background-color: #545BE8;
+}
+
+.statistics .statNumbers{
+    display: flex;
+    gap:25px;
+    flex-direction: column;
+    
+}
+
+.statistics .statNumbers h3{
+    color:gold;
+    text-align: center;
+}
+
+.statistics img{
+    height:400px;
+    width: 400px;
+}
+
+.statistics h2{
+    color:#FFFFFF;
+    font-size: 40px;
+    width:300px;
+}
+
+.statistics p{
+    color:#ffffff;
+    font-size:25px;
+}
+
+.statistics .statNumbers p:nth-child(3){
+    color:#ffffff;
+    width:450px;
+}
+
+.statistics p:first-child{
+    color:gold;
 }
 
 
@@ -333,10 +391,15 @@ footer .end .end_list{
 
 
 @media screen and (max-width:545px) {
+
     .nav{
         display: none;
     }
 
+    .authentication{
+        flex-direction: column; 
+        align-items: center;
+    }
 
     footer .row{
         flex-direction: column;
@@ -375,10 +438,13 @@ footer .end .end_list{
         margin-bottom: 40px;
         flex-direction: column;
         height: calc(100%);
+        width:300px;
+        text-align: center;
     }
 
     .certificate{ 
         flex-direction: column;
+        height: calc(100%);
     }
 
     .FindYourCourseIMG img{
@@ -387,8 +453,38 @@ footer .end .end_list{
     }
 
     .FindYourCourse{
-        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0;
     }
+
+    .statistics{
+        padding:0px;
+        text-align: center;
+    }
+
+    .statistics img{
+        height:200px;
+        width: 200px;
+    }
+    
+    .statistics h2{
+        color:#FFFFFF;
+        font-size: 25px;
+        width:200px;
+    }
+    
+    .statistics p{
+        color:#ffffff;
+        font-size:16px;
+    }
+    
+    .statistics .statNumbers p:nth-child(3){
+        color:#ffffff;
+        width:200px;
+    }
+
 
 }
 
@@ -427,10 +523,13 @@ footer .end .end_list{
 
     .WhatWeGive{
         height: calc(100%);
+        width:300px;
+        text-align: center;
     }
 
     .certificate{ 
         flex-direction: column;
+        height: calc(100%);
     }
 
     .FindYourCourseIMG img{
@@ -439,7 +538,33 @@ footer .end .end_list{
     }
    
     .FindYourCourse{
-        padding-left: 0px;
+        padding: 0px;
+    }
+
+    .statistics{
+        padding:0px;
+        text-align: center;
+    }
+
+    .statistics img{
+        height:200px;
+        width: 200px;
+    }
+    
+    .statistics h2{
+        color:#FFFFFF;
+        font-size: 25px;
+        width:200px;
+    }
+    
+    .statistics p{
+        color:#ffffff;
+        font-size:16px;
+    }
+    
+    .statistics .statNumbers p:nth-child(3){
+        color:#ffffff;
+        width:200px;
     }
 
 }
