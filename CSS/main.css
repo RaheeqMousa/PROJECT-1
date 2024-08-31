@@ -127,16 +127,17 @@ header{
 /* .............................    Offers section    ................................... */
 
 
-.WhatWeGive{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    background-color: F5F5F5;
-    height:400px;
+.WhatWeGive{   
+    background-color:#e9eef3;
+    padding:100px 0px;
 }
+
+.WhatWeGive .row{
+    flex-wrap: wrap;
+}
+
 .whatGive{
-    width:400px;
+    width:20%;
     display: flex;
     gap:15px;
     flex-direction: column;
@@ -151,16 +152,18 @@ header{
 }
 
 .certificate{
+    width: 70%;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    gap:30px; 
 }
 
 .CertificateItem{
     background-color: #545BE8;
     color:#FFFFFF;
     padding: 20px 40px 40px 20px;
-    margin:20px;
+    /* margin:20px; */
     border-radius:20px;
     height:140px;
     display: flex;
@@ -367,9 +370,10 @@ footer .end .end_list{
         padding: 5px 5px 5px 5px; 
         box-sizing: border-box;
     }
+
     
     footer .start{
-        width:300px;
+        width:50%;
         display: flex;
         gap:20px;
         padding: 0px 0px;
@@ -388,13 +392,17 @@ footer .end .end_list{
         text-align: center;
     }
 
+    .WhatWeGive .row{
+        justify-content: center;
+        align-items: center;
+    }
+
     .whatGive{
         width:100%;
     }
 
     .certificate{ 
         flex-direction: column;
-        height: calc(100%);
     }
 
     .FindYourCourseIMG img{
