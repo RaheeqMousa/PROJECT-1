@@ -97,33 +97,6 @@ header{
     color:#ffffff;
 }
 
-/* ..............................   Courses Section   .................................. */
-
-.courses{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.course-items{
-    width: calc((100% -40px)/2);
-    display: flex;
-    flex-wrap: wrap;
-    gap:20px
-}
-
-.course{
-    width: calc((100% -20px)/2);
-    position: relative;
-    color: #FFFFFF;
-}
-
-.course img{
-    filter: brightness();
-}
-
-
 /* .............................    Offers section    ................................... */
 
 
@@ -184,9 +157,15 @@ header{
 
 
 .FindYourCourse{
-    padding: 100px 100px;
+    padding: 80px 80px;
     color:grey;
     font-size: 26px;  
+}
+
+.FindYourCourseDesc{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 
 .FindYourCourse .row{
@@ -216,14 +195,16 @@ header{
     justify-content:flex-start;
     align-items: center;
     gap:40px;
+    font-size: 20px;
+    font-weight:bold;
 }
 
-.ButtonsRow button:first-child{
+.ButtonsRow a:first-child{
     color:#ffffff;
     background-color: #545BE8;
 }
 
-.ButtonsRow button{
+.ButtonsRow a{
     height: 20px;
     width: fit-content;
     padding:20px 20px 20px 20px;
@@ -234,6 +215,8 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
+    color:black;
+    
 }
 
 .FindYourCourseIMG img{
@@ -287,7 +270,192 @@ header{
     color:gold;
 }
 
-/*........................................................................................*/
+/* ..............................   Courses Section   .................................. */
+
+.courses{
+    background-color: rgb(225, 218, 218);
+    padding: 25px 25px;
+}
+
+
+.courses .row{
+    gap:60px;
+}
+
+.course-items,
+.course-description{
+    width:calc((100% - 60px) / 2);
+}
+
+
+.course-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.course{
+    width: calc((100% - 20px) / 2);
+    /*color: #FFFFFF; */
+}
+
+.course-card{
+    position: relative;
+}
+
+.course_information{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10px;
+    align-items: flex-start;
+    color:#FFFFFF;
+}
+
+.course_information span:nth-child(2){
+    align-self: flex-end;
+}
+
+.course_information span:first-child{
+    background-color: #545BE8;
+}
+
+.course img{
+    width:150px;
+    filter: brightness(50%);
+} 
+
+.course-details .row:nth-child(2){
+    gap:20px;
+    justify-content: left;
+}
+
+.course-description{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+
+.course-description a{
+    background-color: #545BE8;
+    color:#FFFFFF;
+    border-radius: 10px;
+    width: fit-content;
+    padding:10px 30px;
+    box-sizing: border-box;
+
+}
+
+
+@media screen and (max-width:800px){
+
+
+    .courses{
+        padding: 0px;
+    }
+    
+    
+    .courses .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .course-items,
+    .course-description{
+        width:calc((100% - 20px) / 2);
+    }
+    
+    
+    .course-items{
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    
+    .course{
+        width: calc((100% - 10px) / 2);
+        /*color: #FFFFFF; */
+    }
+
+
+
+    .course_information{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        padding:0px;
+        align-items: flex-start;
+    }
+    
+    .course_information span:nth-child(2){
+        align-self: flex-end;
+    }
+    
+    .course_information span:first-child{
+        background-color: #545BE8;
+    }
+    
+    .course img{
+        width:150px;
+        filter: brightness(50%);
+    } 
+    
+    .course-details .row:nth-child(2){
+        justify-content: left;
+        flex-direction: column;
+    }
+    
+    .course-description{
+        align-self: center;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .courses .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .course-details{
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .course_information{
+        padding:0px;
+    }
+
+    .course-description{
+        align-self: center;
+    } */
+
+
+
+}
+
+
+/*......................................    Testimonial section    ..................................................*/
 
 .testimonials {
     padding:50px 0px;
