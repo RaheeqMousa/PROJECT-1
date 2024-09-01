@@ -287,8 +287,58 @@ header{
     color:gold;
 }
 
+/*........................................................................................*/
+
+.testimonials {
+    padding:50px 0px;
+}
+
+.testimonials .row{
+    gap:40px;
+}
+
+.testimonials h2{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    width:calc((100% - 40px ) /2 );
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+.user-info{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.rating img{
+    width:20px;
+    height:20px;
+}
+
 
 /* .............................    Footer Section    ................................... */
+
 footer {
     background-color: #393E46;
     padding: 50px 100px 50px 100px; 
@@ -449,6 +499,10 @@ footer .end .end_list{
         width:200px;
     }
 
+    .testimonial{
+        width:100%;
+    }
+
 
 }
 
@@ -534,6 +588,10 @@ footer .end .end_list{
     .statistics .statNumbers p:nth-child(3){
         color:#ffffff;
         width:200px;
+    }
+
+    .testimonial{
+        width:100%;
     }
 
 }
