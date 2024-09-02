@@ -462,6 +462,18 @@ header{
     display: flex;
     gap:20px;
     flex-direction: column;
+    position:relative;
+}
+
+.testimonial::after{
+    content:'';
+    position:absolute;
+    border-top: 20px solid gray;
+    border-right: 20px solid gray;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    right: 0;
+    top: 0;
 }
 
 .user-info{
