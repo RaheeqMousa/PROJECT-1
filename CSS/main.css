@@ -97,60 +97,37 @@ header{
     color:#ffffff;
 }
 
-/* .............................    Offers section    ................................... */
 
 
-.WhatWeGive{   
-    background-color:#e9eef3;
-    padding:100px 0px;
+@media screen and (max-width:545px) {
+
+    .nav{
+        display: none;
+    }
+
+    .authentication{
+        flex-direction: column; 
+        align-items: center;
+    }
+
+
+     .authentication ul .login{
+        width:20px;
+        font-size: 10px;
+    }
+
+    .authentication ul .reg{
+        width:20px;
+        font-size: 10px;
+    }
 }
 
-.WhatWeGive .row{
-    flex-wrap: wrap;
-}
-
-.whatGive{
-    width:20%;
-    display: flex;
-    gap:15px;
-    flex-direction: column;
-}
-
-.whatGive:first-child{
-    color:#545BE8;
-}
-
-.whatGive p{
-    color: gray;
-}
-
-.certificate{
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    gap:30px; 
-}
-
-.CertificateItem{
-    background-color: #545BE8;
-    color:#FFFFFF;
-    padding: 20px 40px 40px 20px;
-    /* margin:20px; */
-    border-radius:20px;
-    height:140px;
-    display: flex;
-    flex-direction: column;
-    gap:15px;
-    height:fit-content;
-}
-
-.CertificateItem img{
-    height:40px;
-    width: 40px;
-    background-color: #FFFFFF;
-    border-radius: 100px;
-}
+@media screen and (max-width:800px){
+    
+    .nav{
+        display: none; 
+    }
+} 
 
 
 /*...........................      FIND YOUR COURSE SECTION     ...................................*/
@@ -226,6 +203,141 @@ header{
 }
 
 
+@media screen and (max-width:545px){
+    .FindYourCourseIMG img{
+        height:200px;
+        width: 200px;
+    }
+
+    .FindYourCourse{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+
+    .FindYourCourseDesc p{
+       width:100%;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    
+    .FindYourCourseIMG img{
+        height:200px;
+        width: 200px;
+    }
+   
+    .FindYourCourse{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .FindYourCourse .row{
+        flex-direction: column;
+    }
+}   
+
+
+/* .............................    Offers section    ................................... */
+
+
+.WhatWeGive{   
+    background-color:#e9eef3;
+    padding:100px 0px;
+}
+
+.WhatWeGive .row{
+    flex-wrap: wrap;
+}
+
+.whatGive{
+    width:20%;
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+}
+
+.whatGive:first-child{
+    color:#545BE8;
+}
+
+.whatGive p{
+    color: gray;
+}
+
+.certificate{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    gap:30px; 
+}
+
+.CertificateItem{
+    background-color: #545BE8;
+    color:#FFFFFF;
+    padding: 20px 40px 40px 20px;
+    /* margin:20px; */
+    border-radius:20px;
+    height:140px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    height:fit-content;
+}
+
+.CertificateItem img{
+    height:40px;
+    width: 40px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+}
+
+
+@media screen and (max-width:545px) {
+
+    .WhatWeGive{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        height: calc(100%);
+        text-align: center;
+    }
+
+    .WhatWeGive .row{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatGive{
+        width:100%;
+    }
+
+    .certificate{ 
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    
+
+    .WhatWeGive{
+        height: calc(100%);
+        width:calc(100%);
+        text-align: center;
+    }
+
+    .certificate{ 
+        flex-direction: column;
+        height: calc(100%);
+    }
+
+}  
+
+
 /*.............................................    Statistics Section    ................................................*/
 
 .statistics{
@@ -268,6 +380,71 @@ header{
 
 .statistics p:first-child{
     color:gold;
+}
+
+@media screen and (max-width:545px) {
+
+
+    .statistics{
+        padding:0px;
+        text-align: center;
+    }
+
+    .statistics .row{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .statistics img{
+        height:180px;
+        width: 180px;
+    }
+    
+    .statistics h2{
+        color:#FFFFFF;
+        font-size: 25px;
+        width:200px;
+    }
+    
+    .statistics p{
+        color:#ffffff;
+        font-size:16px;
+    }
+    
+    .statistics .statNumbers p:nth-child(3){
+        color:#ffffff;
+        width:200px;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .statistics{
+        padding:0px;
+        text-align: center;
+    }
+
+    .statistics img{
+        height:200px;
+        width: 200px;
+    }
+    
+    .statistics h2{
+        color:#FFFFFF;
+        font-size: 25px;
+        width:200px;
+    }
+    
+    .statistics p{
+        color:#ffffff;
+        font-size:16px;
+    }
+    
+    .statistics .statNumbers p:nth-child(3){
+        color:#ffffff;
+        width:200px;
+    }
 }
 
 /* ..............................   Courses Section   .................................. */
@@ -419,23 +596,7 @@ header{
     .course-description{
         align-self: center;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 }
 
 
@@ -501,6 +662,24 @@ header{
 }
 
 
+@media screen and (max-width:545px) {
+
+    .testimonial{
+        width:100%;
+    }
+
+
+}
+
+@media screen and (max-width:800px){
+
+    .testimonial{
+        width:100%;
+    }
+
+}
+
+
 /* .............................    Footer Section    ................................... */
 
 footer {
@@ -550,41 +729,17 @@ footer .end .end_list{
 
 
 
-/*..................................    Media Section    ............................................*/
-
-
 @media screen and (max-width:545px) {
-
-    .nav{
-        display: none;
-    }
-
-    .authentication{
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    footer .row{
-        flex-direction: column;
-        gap: 20px;
-     }
-
-     .authentication ul .login{
-        width:20px;
-        font-size: 10px;
-    }
-
-    .authentication ul .reg{
-        width:20px;
-        font-size: 10px;
-    }
-
     footer {
         background-color: #393E46;
         padding: 5px 5px 5px 5px; 
         box-sizing: border-box;
     }
-
+   
+    footer .row{
+        flex-direction: column;
+        gap: 20px;
+     }
     
     footer .start{
         width:50%;
@@ -597,101 +752,19 @@ footer .end .end_list{
        padding:0px;
        flex-direction: column;
     }
-
-    .WhatWeGive{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        flex-direction: column;
-        height: calc(100%);
-        text-align: center;
-    }
-
-    .WhatWeGive .row{
-        justify-content: center;
-        align-items: center;
-    }
-
-    .whatGive{
-        width:100%;
-    }
-
-    .certificate{ 
-        flex-direction: column;
-    }
-
-    .FindYourCourseIMG img{
-        height:200px;
-        width: 200px;
-    }
-
-    .FindYourCourse{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding:0;
-    }
-
-    .FindYourCourseDesc p{
-       width:100%;
-    }
-
-    .statistics{
-        padding:0px;
-        text-align: center;
-    }
-
-    .statistics .row{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    }
-
-    .statistics img{
-        height:180px;
-        width: 180px;
-    }
-    
-    .statistics h2{
-        color:#FFFFFF;
-        font-size: 25px;
-        width:200px;
-    }
-    
-    .statistics p{
-        color:#ffffff;
-        font-size:16px;
-    }
-    
-    .statistics .statNumbers p:nth-child(3){
-        color:#ffffff;
-        width:200px;
-    }
-
-    .testimonial{
-        width:100%;
-    }
-
-
 }
 
-
 @media screen and (max-width:800px){
-    
-    .nav{
-        display: none; 
-    }
-
-
-    footer .row{
-        flex-direction: column;
-        gap: 50px;
-     }
-
 
     footer{
         flex-direction: column;
         padding:20px 10px 5px 10px;      
      }
+
+    footer .row{
+        flex-direction: column;
+        gap: 50px;
+    }
     
     footer .start{
         padding: 0px 0px;
@@ -706,62 +779,6 @@ footer .end .end_list{
         justify-content: center;
         align-items: center;
     }
-
-    .WhatWeGive{
-        height: calc(100%);
-        width:calc(100%);
-        text-align: center;
-    }
-
-    .certificate{ 
-        flex-direction: column;
-        height: calc(100%);
-    }
-
-    .FindYourCourseIMG img{
-        height:200px;
-        width: 200px;
-    }
-   
-    .FindYourCourse{
-        padding: 0px;
-        text-align: center;
-    }
-
-    .FindYourCourse .row{
-        flex-direction: column;
-    }
-
-    .statistics{
-        padding:0px;
-        text-align: center;
-    }
-
-    .statistics img{
-        height:200px;
-        width: 200px;
-    }
-    
-    .statistics h2{
-        color:#FFFFFF;
-        font-size: 25px;
-        width:200px;
-    }
-    
-    .statistics p{
-        color:#ffffff;
-        font-size:16px;
-    }
-    
-    .statistics .statNumbers p:nth-child(3){
-        color:#ffffff;
-        width:200px;
-    }
-
-    .testimonial{
-        width:100%;
-    }
-
 }
 
 @media screen and (min-width:800px){
@@ -775,3 +792,10 @@ footer .end .end_list{
     }
 
 }
+
+
+/*..................................    Media Section    ............................................*/
+
+
+
+
