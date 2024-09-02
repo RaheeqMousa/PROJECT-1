@@ -97,7 +97,17 @@ header{
     color:#ffffff;
 }
 
-
+@media screen and (max-width:298px){
+    header{
+        height: fit-content;
+    }
+    header .container{
+        width: 100%;
+    }
+    .authentication ul{
+        gap:0px;
+    }
+}
 
 @media screen and (max-width:545px) {
 
@@ -202,6 +212,30 @@ header{
     /* padding-right: 100px; */
 }
 
+
+@media screen and (max-width:298px){
+
+    .FindYourCourseDesc{
+        width:100%;
+    }
+
+    .FindYourCourseIMG img{
+        width:100%;
+    }
+
+    .ButtonsRow{
+        gap:0;
+    }
+
+    .ButtonsRow a{
+        width:calc(100% / 4);
+    }
+
+    .FindYourCourse .container{
+        width: 100%;
+    }
+
+}
 
 @media screen and (max-width:545px){
     .FindYourCourseIMG img{
@@ -382,6 +416,37 @@ header{
     color:gold;
 }
 
+
+
+@media screen and (max-width:298px) {
+    .statistics .container{
+        width:100%;
+    }
+
+    .statistics .row{
+        flex-direction: row;
+    }
+
+    .statistics img{
+       max-width: 100%;
+    } 
+
+    /* .statistics p,.statistics h2{
+        text-align: left;
+        width: 100%;
+    }
+
+    .statNumbers .row{
+        width:100%;
+        align-self: flex-start;
+        
+    }
+    .statNumbers .row div{
+        width: 100%;
+    } */
+
+}
+
 @media screen and (max-width:545px) {
 
 
@@ -397,8 +462,7 @@ header{
     }
 
     .statistics img{
-        height:180px;
-        width: 180px;
+        width: 100%;
     }
     
     .statistics h2{
@@ -530,6 +594,13 @@ header{
 
 }
 
+
+@media screen and (max-width:298px) {
+
+    .courses .container{
+        width:100%;
+    }
+}
 
 @media screen and (max-width:800px){
 
@@ -792,10 +863,4 @@ footer .end .end_list{
     }
 
 }
-
-
-/*..................................    Media Section    ............................................*/
-
-
-
 
